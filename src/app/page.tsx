@@ -5,7 +5,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import heroBackground from "../../gambar/background-home.jpeg";
 import logoImage from "../../gambar/logo.png";
-import aboutImage from "../../gambar/makanan1.jpg";
+import aboutImage from "../../gambar/foto-bersama.jpg";
 import {
   ArrowRight,
   Clock3,
