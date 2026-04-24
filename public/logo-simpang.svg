@@ -1,0 +1,23 @@
+<svg width="320" height="320" viewBox="0 0 320 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <path id="topArc" d="M 49 160 A 111 111 0 0 1 271 160" />
+    <path id="bottomArc" d="M 271 160 A 111 111 0 0 1 49 160" />
+  </defs>
+  <circle cx="160" cy="160" r="156" fill="#17192D" />
+  <circle cx="160" cy="160" r="121" stroke="#F5F2EC" stroke-width="3.5" />
+  <circle cx="160" cy="160" r="115" stroke="#F5F2EC" stroke-width="1.6" opacity="0.95" />
+  <text fill="#F5F2EC" font-family="Georgia, 'Times New Roman', serif" font-size="22" font-weight="600" letter-spacing="6">
+    <textPath href="#topArc" startOffset="50%" text-anchor="middle">SIMPANG EMPAT</textPath>
+  </text>
+  <text fill="#F5F2EC" font-family="Georgia, 'Times New Roman', serif" font-size="22" font-weight="600" letter-spacing="6">
+    <textPath href="#bottomArc" startOffset="50%" text-anchor="middle">SUKI</textPath>
+  </text>
+  <g stroke="#F5F2EC" stroke-width="15" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <ellipse cx="160" cy="112" rx="34" ry="56" />
+    <ellipse cx="112" cy="160" rx="34" ry="56" transform="rotate(-90 112 160)" />
+    <ellipse cx="208" cy="160" rx="34" ry="56" transform="rotate(90 208 160)" />
+    <ellipse cx="160" cy="208" rx="34" ry="56" />
+  </g>
+  <path d="M189 86C173 102 158 126 149 149C140 171 140 197 151 218" stroke="#F5F2EC" stroke-width="18" stroke-linecap="round"/>
+  <path d="M129 235C154 249 186 245 203 225C219 205 218 176 197 161C184 151 166 149 151 140C137 132 123 118 123 100C123 82 138 67 158 67C170 67 181 72 190 80" stroke="#F5F2EC" stroke-width="19" stroke-linecap="round"/>
+</svg>
