@@ -1,15 +1,17 @@
 "use client";
 
 import * as React from "react";
-import type { VariantProps } from "class-variance-authority";
 import { ArrowUpRight } from "lucide-react";
 
-import { buttonVariants } from "@/components/ui/button";
+import {
+  buttonVariants,
+  type ButtonVariantProps,
+} from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { orderChannelLabel, orderUrl } from "@/lib/site-content";
 
 type CtaLinkProps = Omit<React.ComponentPropsWithoutRef<"a">, "href"> &
-  VariantProps<typeof buttonVariants> & {
+  ButtonVariantProps & {
     source: string;
     showIcon?: boolean;
   };
