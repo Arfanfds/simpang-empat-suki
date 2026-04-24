@@ -1,10 +1,17 @@
+import type { StaticImageData } from "next/image";
+
+import mantauGorengImage from "../../gambar/mantau-goreng.jpg";
+import sapiLadaHitamImage from "../../gambar/sapi-lada-hitam.jpg";
+import sapoTahuSeafoodImage from "../../gambar/sapo-tahu-seafood.jpg";
+
 export type FeaturedMenu = {
   id: string;
   name: string;
   description: string;
   imageLabel: string;
-  imageUrl: string;
+  imageUrl: string | StaticImageData;
   price: number;
+  priceLabel?: string;
   isFeatured: boolean;
 };
 
@@ -45,47 +52,13 @@ export const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encode
 
 const featuredMenus: FeaturedMenu[] = [
   {
-    id: "cap-cay-goreng",
-    name: "Cap Cay Goreng",
-    description:
-      "Tumisan aneka sayur segar dengan irisan ayam, bakso, dan seafood pilihan. Dimasak dengan tingkat kematangan pas dan bumbu gurih khas Simpang 4.",
-    imageLabel: "Tumis Wok Signature",
-    imageUrl:
-      "https://images.unsplash.com/photo-1512058564366-18510be2db19?w=800&auto=format&fit=crop",
-    price: 60000,
-    isFeatured: true,
-  },
-  {
-    id: "sapo-tahu-seafood",
-    name: "Sapo Tahu Seafood",
-    description:
-      "Paduan tahu sutra lembut, udang, dan cumi segar yang dimasak sempurna dalam kuah kental gurih. Disajikan hangat, sangat cocok untuk dinikmati bersama nasi putih.",
-    imageLabel: "Seafood Claypot",
-    imageUrl:
-      "https://images.unsplash.com/photo-1582450871972-ab5ce2111540?w=800&auto=format&fit=crop",
-    price: 73500,
-    isFeatured: true,
-  },
-  {
     id: "sapi-lada-hitam",
     name: "Sapi Lada Hitam",
     description:
       "Menu legendaris yang membesarkan nama kami! Daging sapi empuk dengan saus lada hitam pekat yang khas. Sangat dicintai warga lokal dan kerap dijadikan buah tangan (oleh-oleh) khas Balikpapan.",
     imageLabel: "Pepper Beef",
-    imageUrl:
-      "https://images.unsplash.com/photo-1544025162-d76694265947?w=800&auto=format&fit=crop",
-    price: 86500,
-    isFeatured: true,
-  },
-  {
-    id: "cumi-telur-asin",
-    name: "Cumi Telur Asin",
-    description:
-      "Potongan cumi segar yang digoreng renyah, lalu dibalut lumeran saus telur asin (salted egg) asli yang gurih, creamy, dan bikin nagih.",
-    imageLabel: "Savory Favorite",
-    imageUrl:
-      "https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?w=800&auto=format&fit=crop",
-    price: 73500,
+    imageUrl: sapiLadaHitamImage,
+    price: 65000,
     isFeatured: true,
   },
   {
@@ -94,9 +67,19 @@ const featuredMenus: FeaturedMenu[] = [
     description:
       "Signature dish kami sejak 2003. Roti mantau yang renyah di luar dan sangat lembut di dalam. Pasangan paling sempurna untuk Sapi Lada Hitam dan favorit untuk dibawa pulang.",
     imageLabel: "Golden Bites",
-    imageUrl:
-      "https://images.unsplash.com/photo-1496116218417-1a781b1c416c?w=800&auto=format&fit=crop",
-    price: 20000,
+    imageUrl: mantauGorengImage,
+    price: 10000,
+    priceLabel: "Rp 10.000 / pcs",
+    isFeatured: true,
+  },
+  {
+    id: "sapo-tahu-seafood",
+    name: "Sapo Tahu Seafood",
+    description:
+      "Paduan tahu sutra lembut, udang, dan cumi segar yang dimasak sempurna dalam kuah kental gurih. Disajikan hangat, sangat cocok untuk dinikmati bersama nasi putih.",
+    imageLabel: "Seafood Claypot",
+    imageUrl: sapoTahuSeafoodImage,
+    price: 58000,
     isFeatured: true,
   },
 ];

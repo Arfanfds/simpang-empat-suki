@@ -396,7 +396,7 @@ export default function Home() {
                           Harga
                         </p>
                         <p className="mt-1 text-lg font-semibold tracking-tight text-white">
-                          {formatRupiah(menu.price)}
+                          {menu.priceLabel ?? formatRupiah(menu.price)}
                         </p>
                       </div>
                       <CtaLink
