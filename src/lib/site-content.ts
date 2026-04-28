@@ -46,9 +46,7 @@ export const orderUrl =
 export const orderChannelLabel =
   linktreeUrl && linktreeUrl.length > 0 ? "Linktree" : "WhatsApp";
 
-export const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
-  `${restaurantInfo.address}, ${restaurantInfo.city}`,
-)}`;
+export const mapsUrl = "https://maps.app.goo.gl/PhM2XPJrBmxfGK9v5";
 
 const featuredMenus: FeaturedMenu[] = [
   {
